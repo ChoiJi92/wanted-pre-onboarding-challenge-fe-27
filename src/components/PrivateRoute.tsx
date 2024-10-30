@@ -1,4 +1,4 @@
-import useAuthStore from '@/zustand/auth'
+import useAuthStore from '@/store/auth'
 import React from 'react'
 import { Navigate } from 'react-router-dom'
 

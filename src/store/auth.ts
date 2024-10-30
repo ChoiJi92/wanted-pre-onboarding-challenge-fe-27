@@ -2,8 +2,9 @@ import { create } from 'zustand'
 import { persist } from 'zustand/middleware'
 
 interface AuthStore {
-  token: string
+  token: string | null
   setToken: (token: string) => void
+  logout: () => void
 }
 
 const useAuthStore = create(
@@ -11,7 +12,12 @@ const useAuthStore = create(
     (set) => ({
       token: '',
       setToken: (token) => set({ token }),
+      logout: () => {
+        set({ token: null })
+        localStorage.removeItem('@TOKEN')
+      },
     }),
+
     {
       name: '@TOKEN',
     },

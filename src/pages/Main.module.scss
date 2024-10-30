@@ -1,0 +1,15 @@
+@use '../scss/typography.scss' as *;
+
+.container {
+  display: flex;
+  flex-direction: column;
+  margin: 0 auto;
+  gap: 20px;
+  width: 80%;
+  padding: 30px;
+
+  h1 {
+    @include typography($t1);
+    font-weight: bold;
+  }
+}

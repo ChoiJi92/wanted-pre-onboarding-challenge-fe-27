@@ -1,6 +1,6 @@
 import loginApi from '@/apis/loginApi'
 import { FormValues } from '@/types/formValues'
-import useAuthStore from '@/zustand/auth'
+import useAuthStore from '@/store/auth'
 import { useMutation } from '@tanstack/react-query'
 import { AxiosError } from 'axios'
 import { useNavigate } from 'react-router-dom'

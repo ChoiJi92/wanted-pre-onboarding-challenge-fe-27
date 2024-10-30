@@ -8,6 +8,7 @@ interface TextFieldProps extends InputHTMLAttributes<HTMLInputElement> {
   label?: React.ReactNode
   hasError?: boolean
   errorMessage?: React.ReactNode
+  textarea?: boolean
 }
 
 const TextField = forwardRef<HTMLInputElement, TextFieldProps>(
