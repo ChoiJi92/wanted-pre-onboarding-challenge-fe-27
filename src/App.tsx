@@ -16,6 +16,14 @@ function App() {
             </PrivateRoute>
           }
         />
+        <Route
+          path="/todo/:id"
+          element={
+            <PrivateRoute>
+              <Main />
+            </PrivateRoute>
+          }
+        />
         <Route path="/signup" element={<Signup />} />
         <Route path="/login" element={<Login />} />
       </Routes>
