@@ -1,50 +1,31 @@
-# React + TypeScript + Vite
+# 원티드 프리온보딩 챌린지 프론트엔드 코스 11월
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+안녕하세요 2년차 프론트엔드 개발자 최지훈입니다.
 
-Currently, two official plugins are available:
+## 프로젝트 소개
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+이 프로젝트는 투두리스트 애플리케이션입니다. 사용자는 할 일을 추가하고, 조회하고, 수정하고, 삭제할 수 있습니다. 주요 기능으로는 새로운 할 일 추가, 할 일 목록 조회, 개별 할 일 상세 조회, 할 일 수정 및 삭제가 있습니다.
 
-## Expanding the ESLint configuration
+## 기술 스택
 
-If you are developing a production application, we recommend updating the configuration to enable type aware lint rules:
+- **프론트엔드 프레임워크**: React 18
+- **언어**: TypeScript
+- **상태 관리**:
+  - Zustand
+  - TanStack Query (React Query)
+- **라우팅**: React Router DOM
+- **스타일링**:
+  - SASS
+  - classnames (CSS 모듈과 함께 사용)
+- **HTTP 클라이언트**: Axios
+- **빌드 도구**: Vite
+- **코드 품질 관리**:
+  - ESLint
+  - TypeScript ESLint
 
-- Configure the top-level `parserOptions` property like this:
+## 주요 기능
 
-```js
-export default tseslint.config({
-  languageOptions: {
-    // other options...
-    parserOptions: {
-      project: ['./tsconfig.node.json', './tsconfig.app.json'],
-      tsconfigRootDir: import.meta.dirname,
-    },
-  },
-})
-```
-
-- Replace `tseslint.configs.recommended` to `tseslint.configs.recommendedTypeChecked` or `tseslint.configs.strictTypeChecked`
-- Optionally add `...tseslint.configs.stylisticTypeChecked`
-- Install [eslint-plugin-react](https://github.com/jsx-eslint/eslint-plugin-react) and update the config:
-
-```js
-// eslint.config.js
-import react from 'eslint-plugin-react'
-
-export default tseslint.config({
-  // Set the react version
-  settings: { react: { version: '18.3' } },
-  plugins: {
-    // Add the react plugin
-    react,
-  },
-  rules: {
-    // other rules...
-    // Enable its recommended rules
-    ...react.configs.recommended.rules,
-    ...react.configs['jsx-runtime'].rules,
-  },
-})
-```
+- 새로운 할 일 추가
+- 할 일 목록 조회
+- 개별 할 일 상세 조회
+- 할 일 수정 및 삭제
