@@ -16,10 +16,12 @@ const useUpdateTodo = ({
   return useMutation({
     mutationFn: ({ id, title, content }: TodoItemWithId) =>
       updateTodo({ id, title, content }),
-    onSuccess: () => {
-      // console.log(result, 'result')
-      // const id = result.data.data.id
+    onSuccess: (result) => {
+      const id = result.data.data.id
       queryClient.invalidateQueries({ queryKey: ['todos'] })
+      queryClient.invalidateQueries({
+        queryKey: ['todo', id],
+      })
       handleUpdateCancelButton()
     },
     onError: (error: AxiosError) => {

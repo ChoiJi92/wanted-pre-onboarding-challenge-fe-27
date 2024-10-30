@@ -1,6 +1,5 @@
 import classNames from 'classnames/bind'
 import styles from './TodoDetail.module.scss'
-import useTodoStore from '@/store/todo'
 import useTodo from '@/hooks/useTodo'
 import Button from '../shared/Button'
 import UpdateTodoDetail from './UpdateTodoDetail'
@@ -9,8 +8,7 @@ import useDeleteTodo from '@/hooks/useDeleteTodo'
 
 const cx = classNames.bind(styles)
 
-const TodoDetail = () => {
-  const { id } = useTodoStore()
+const TodoDetail = ({ id }: { id: string }) => {
   const { data, isFetching } = useTodo({ id })
 
   const [isUpdate, setIsUpdate] = useState<boolean>(false)
