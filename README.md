@@ -8,8 +8,6 @@
 
 ## 기술 스택
 
-- **프론트엔드 프레임워크**: React 18
-- **언어**: TypeScript
 - **상태 관리**:
   - Zustand
   - TanStack Query (React Query)
