@@ -23,6 +23,7 @@ const useCreateTodo = ({
       console.log('error', error)
       if (error.status === 401) {
         // 로그인 페이지로 이동
+        alert('유효하지 않는 회원입니다.')
         logout()
         navigate('/login')
       }
