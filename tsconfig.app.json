@@ -24,8 +24,10 @@
     "baseUrl": ".",
     "paths": {
       "@/*": ["src/*"],
+      "@pages/*": ["src/pages/*"],
       "@components/*": ["src/components/*"],
       "@scss/*": ["src/scss/*"],
+      "@store/*": ["src/store/*"],
       "@shared/*": ["src/components/shared/*"]
     }
   },
