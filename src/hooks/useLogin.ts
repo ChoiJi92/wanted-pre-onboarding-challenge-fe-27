@@ -1,22 +1,33 @@
-import signupApi from '@/apis/signupApi'
+import loginApi from '@/apis/loginApi'
 import { FormValues } from '@/types/formValues'
 import useAuthStore from '@/zustand/auth'
 import { useMutation } from '@tanstack/react-query'
+import { AxiosError } from 'axios'
+import { useNavigate } from 'react-router-dom'
 
-const useSignup = () => {
+interface ErrorResponse {
+  details?: string
+}
+
+const useLogin = () => {
   const { setToken } = useAuthStore()
+  const navigate = useNavigate()
   return useMutation({
     mutationFn: ({ email, password }: Pick<FormValues, 'email' | 'password'>) =>
-      signupApi({ email, password }),
+      loginApi({ email, password }),
     onSuccess: (result) => {
       if (result.data.token) {
         setToken(result.data.token)
+        navigate('/')
       }
     },
-    onError: (error) => {
+    onError: (error: AxiosError<ErrorResponse>) => {
       console.log('error', error)
+      if (error.response) {
+        alert(error.response.data?.details)
+      }
     },
   })
 }
 
-export default useSignup
+export default useLogin
