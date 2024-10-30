@@ -1,0 +1,40 @@
+@use '../../scss/typography.scss' as *;
+
+.container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 20px;
+  padding: 0 20px;
+
+  h3 {
+    @include typography($t3);
+    font-weight: bold;
+    margin-bottom: 10px;
+  }
+}
+
+.data-container {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.data-wrap {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  p {
+    @include typography($t4);
+    padding-bottom: 10px;
+    border-bottom: 1px solid var(--gray300);
+  }
+  span {
+    color: var(--gray500);
+  }
+}
+
+.button-wrap {
+  display: flex;
+  gap: 10px;
+}

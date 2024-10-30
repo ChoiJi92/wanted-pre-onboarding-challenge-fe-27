@@ -1,9 +1,9 @@
 import useFormValues from '@/hooks/useFormValues'
-import Button from '@/shared/Button'
-import TextField from '@/shared/TextField'
+import Button from '@/components/shared/Button'
+import TextField from '@/components/shared/TextField'
 import { FormEvent } from 'react'
 import classNames from 'classnames/bind'
-import styles from './Signup.module.scss'
+import styles from './Login.module.scss'
 import useLogin from '@/hooks/useLogin'
 
 const cx = classNames.bind(styles)

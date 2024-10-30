@@ -1,6 +1,6 @@
 import signupApi from '@/apis/signupApi'
 import { FormValues } from '@/types/formValues'
-import useAuthStore from '@/zustand/auth'
+import useAuthStore from '@/store/auth'
 import { useMutation } from '@tanstack/react-query'
 
 const useSignup = () => {
