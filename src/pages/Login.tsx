@@ -23,7 +23,7 @@ const Login = () => {
 
   return (
     <form onSubmit={onSubmit} className={cx('container')}>
-      <h2>회원가입</h2>
+      <h2>로그인</h2>
       <TextField
         value={formValues.email}
         name="email"
