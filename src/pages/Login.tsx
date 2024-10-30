@@ -5,6 +5,7 @@ import { FormEvent } from 'react'
 import classNames from 'classnames/bind'
 import styles from './Login.module.scss'
 import useLogin from '@/hooks/useLogin'
+import { Link } from 'react-router-dom'
 
 const cx = classNames.bind(styles)
 
@@ -48,6 +49,7 @@ const Login = () => {
         type="submit"
         disabled={buttonDisabled || isPending}
       />
+      <Link to={'/signup'}>회원가입</Link>
     </form>
   )
 }
