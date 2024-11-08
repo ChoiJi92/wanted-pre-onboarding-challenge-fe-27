@@ -1,0 +1,20 @@
+{
+  "todos": [
+    {
+      "title": "리액트 공부하기",
+      "content": "리액트를 공부해보자!",
+      "id": "wXzJk6f8vOYJobsUbtrhO",
+      "createdAt": "2024-11-08T01:48:29.865Z",
+      "updatedAt": "2024-11-08T01:48:29.865Z"
+    }
+  ],
+  "users": [
+    {
+      "email": "jeahoon100@naver.com",
+      "password": "wlgns0930!",
+      "id": "HkZQhMDkrn-awkwady9xN",
+      "createdAt": "2024-11-08T01:48:18.598Z",
+      "updatedAt": "2024-11-08T01:48:18.598Z"
+    }
+  ]
+}
