@@ -3,8 +3,9 @@
 안녕하세요, 2년차 프론트엔드 개발자 최지훈입니다.
 
 ## 프로젝트 소개
-
-![로그인페이지](<스크린샷 2024-11-08 오전 10.48.04.png>) ![회원가입페이지](<스크린샷 2024-11-08 오전 10.48.09.png>) ![메인페이지](<스크린샷 2024-11-08 오전 10.48.38.png>)
+<img width="885" alt="로그인페이지" src="https://github.com/user-attachments/assets/71d0eea8-ed86-4578-8cd2-fbdc05a48cb0">
+<img width="929" alt="회원가입페이지" src="https://github.com/user-attachments/assets/e1579d55-2c47-4450-b252-82ec97b8f0f6">
+<img width="1417" alt="메인페이지" src="https://github.com/user-attachments/assets/6acf94d6-cf2d-4413-8973-9f6c48f3342e">
 
 ### 기능 설명
 
